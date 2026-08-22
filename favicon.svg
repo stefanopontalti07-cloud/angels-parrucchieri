@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Angels Parrucchieri">
+  <rect width="64" height="64" fill="#17191B"/>
+  <path d="M13 49 32 15l19 34" fill="none" stroke="#C4703A" stroke-width="7"
+        stroke-linejoin="miter" stroke-linecap="butt"/>
+  <path d="M21 38h22" fill="none" stroke="#C4703A" stroke-width="6"/>
+</svg>

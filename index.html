@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parrucchiere a Rovereto — Angels Parrucchieri</title>
+<meta name="description" content="Parrucchiere a Rovereto dal 2003, donna e uomo. Taglio, colore, mèches, extension e ricostruzione del capello. Si prenota con un messaggio su WhatsApp.">
+<meta name="theme-color" content="#17191B">
+<link rel="canonical" href="https://stefanopontalti07-cloud.github.io/angels-parrucchieri/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://stefanopontalti07-cloud.github.io/angels-parrucchieri/">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Angels Parrucchieri">
+<meta property="og:title" content="Parrucchiere a Rovereto — Angels Parrucchieri">
+<meta property="og:description" content="Taglio, colore e ricostruzione del capello a Rovereto, dal 2003. Si prenota con un messaggio su WhatsApp.">
+<meta property="og:image" content="https://stefanopontalti07-cloud.github.io/angels-parrucchieri/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=supreme@400,500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/foto/hero.webp" fetchpriority="high">
+
+<style>
+:root{
+  --grafite:#17191B;
+  --grafite-alto:#1F2225;
+  --rame:#C4703A;
+  --rame-chiaro:#E29A64;
+  --panna:#F2EFEA;
+  --panna-soft:rgba(242,239,234,.68);
+  --panna-lieve:rgba(242,239,234,.46);
+  --linea:rgba(242,239,234,.14);
+  --ease-quart:cubic-bezier(.25,1,.5,1);
+  --ease-expo:cubic-bezier(.16,1,.3,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  background:var(--grafite);
+  color:var(--panna);
+  font-family:"Supreme",system-ui,-apple-system,sans-serif;
+  font-size:17px;line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding-left:28px;padding-right:28px}
+h1,h2,h3{
+  font-family:"Archivo",system-ui,sans-serif;
+  font-variation-settings:"wdth" 118;
+  font-weight:700;letter-spacing:-.035em;line-height:.95;text-wrap:balance;
+}
+
+/* avviso prototipo, si toglie prima della pubblicazione */
+.avviso{background:var(--rame);color:#12100E;font-size:13.5px;line-height:1.45;padding:10px 20px;text-align:center;font-weight:500}
+
+/* intestazione */
+.top{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:20px;padding-bottom:20px;border-bottom:1px solid var(--linea)}
+.marchio{font-family:"Archivo",sans-serif;font-variation-settings:"wdth" 125;font-weight:800;font-size:19px;letter-spacing:-.02em;text-transform:uppercase;text-decoration:none}
+.marchio span{color:var(--rame)}
+.top nav{display:flex;gap:26px;font-size:15px}
+.top nav a{color:var(--panna-soft);text-decoration:none;transition:color .2s var(--ease-quart)}
+.top nav a:hover,.top nav a:focus-visible{color:var(--panna)}
+@media(max-width:880px){.top nav{display:none}}
+
+/* bottoni */
+.azioni{display:flex;flex-wrap:wrap;gap:12px}
+.btn{
+  display:inline-block;padding:15px 28px;border-radius:4px;text-decoration:none;
+  font-family:"Archivo",sans-serif;font-weight:600;font-size:16px;letter-spacing:-.01em;
+  transition:transform .12s var(--ease-quart),background-color .2s var(--ease-quart),color .2s var(--ease-quart),border-color .2s var(--ease-quart);
+}
+.btn-p{background:var(--rame);color:#12100E}
+.btn-p:hover,.btn-p:focus-visible{background:var(--rame-chiaro)}
+.btn-s{border:1px solid var(--linea);color:var(--panna)}
+.btn-s:hover,.btn-s:focus-visible{border-color:var(--rame);color:var(--rame)}
+.btn:active{transform:translateY(1px)}
+:focus-visible{outline:2px solid var(--rame);outline-offset:3px}
+
+/* hero */
+.hero{padding-top:72px;padding-bottom:80px;display:grid;grid-template-columns:1.12fr .88fr;gap:56px;align-items:end}
+.hero h1{font-size:clamp(3rem,7.6vw,5.4rem)}
+.hero h1 em{font-style:normal;color:var(--rame)}
+.claim{margin-top:24px;max-width:36ch;font-size:19px;color:var(--panna-soft)}
+.dal{margin-top:28px;display:flex;align-items:center;gap:14px;font-size:14.5px;color:var(--panna-soft)}
+.dal i{display:block;width:44px;height:1px;background:var(--rame);flex:none}
+.dal b{color:var(--panna);font-weight:500}
+.hero .azioni{margin-top:32px}
+.hero figure{margin:0;border-radius:4px;overflow:hidden}
+@media(max-width:880px){.hero{grid-template-columns:1fr;gap:34px;padding-top:48px;padding-bottom:56px}}
+
+/* sezioni */
+.sezione{padding-top:78px;padding-bottom:78px;border-top:1px solid var(--linea)}
+.sezione h2{font-size:clamp(2rem,4.4vw,3rem);max-width:20ch}
+.intro{margin-top:18px;max-width:58ch;color:var(--panna-soft)}
+
+/* ricostruzione, il pezzo forte */
+.forte{background:var(--grafite-alto);border-top:0}
+.forte .riga{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.forte figure{margin:0;border-radius:4px;overflow:hidden}
+.passi{margin-top:32px;display:grid;gap:24px}
+.passo{padding-left:22px;border-left:2px solid var(--rame)}
+.passo strong{display:block;font-family:"Archivo",sans-serif;font-weight:600;font-size:19px;letter-spacing:-.02em}
+.passo p{margin-top:6px;color:var(--panna-soft);font-size:16px}
+@media(max-width:880px){.forte .riga{grid-template-columns:1fr;gap:34px}}
+
+/* servizi */
+.lista{margin-top:44px}
+.voce{display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--linea)}
+.voce:first-child{border-top:1px solid var(--linea)}
+.voce b{font-family:"Archivo",sans-serif;font-variation-settings:"wdth" 112;font-weight:600;font-size:21px;letter-spacing:-.02em}
+.voce span{color:var(--panna-soft);font-size:15.5px}
+.voce em{font-style:normal;color:var(--rame);font-size:14px;white-space:nowrap}
+@media(max-width:760px){.voce{grid-template-columns:1fr;gap:6px}.voce em{margin-top:4px}}
+.nota-prezzi{margin-top:26px;font-size:15.5px;color:var(--panna-lieve);max-width:60ch}
+
+/* lavori */
+.griglia{margin-top:44px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.griglia figure{margin:0;border-radius:4px;overflow:hidden}
+.griglia figcaption{margin-top:12px;font-size:15px;color:var(--panna-soft)}
+.griglia img{transition:transform .5s var(--ease-quart)}
+.griglia figure:hover img{transform:scale(1.02)}
+@media(max-width:760px){.griglia{grid-template-columns:1fr;gap:26px}}
+
+/* chi c'e' dietro */
+.dietro{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.dietro p{margin-top:16px;color:var(--panna-soft);max-width:46ch}
+.dietro figure{margin:0;border-radius:4px;overflow:hidden}
+@media(max-width:880px){.dietro{grid-template-columns:1fr;gap:32px}}
+
+/* contatti */
+.contatti{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.orari{width:100%;border-collapse:collapse;margin-top:22px;font-size:16px}
+.orari th{text-align:left;font-weight:400;padding:11px 0;border-bottom:1px solid var(--linea)}
+.orari td{text-align:right;padding:11px 0;border-bottom:1px solid var(--linea);color:var(--panna-soft)}
+.nap{margin-top:22px;font-size:16.5px;line-height:2;color:var(--panna-soft)}
+.nap a{color:var(--panna);text-decoration:none;border-bottom:1px solid var(--rame)}
+.nap a:hover{color:var(--rame)}
+.contatti .azioni{margin-top:26px}
+@media(max-width:880px){.contatti{grid-template-columns:1fr;gap:36px}}
+
+footer{border-top:1px solid var(--linea);padding-top:26px;padding-bottom:26px;font-size:14px;color:var(--panna-lieve);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+/* barra fissa su telefono */
+.barra{
+  position:fixed;left:0;right:0;bottom:0;z-index:20;display:none;gap:10px;padding:10px 14px;
+  background:rgba(23,25,27,.94);border-top:1px solid var(--linea);backdrop-filter:blur(8px);
+}
+.barra .btn{flex:1;text-align:center;padding:14px 10px;font-size:15.5px}
+@media(max-width:880px){.barra{display:flex}body{padding-bottom:78px}}
+
+/* un solo momento firma, all'apertura */
+@keyframes sali{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.hero h1,.hero .claim,.hero .dal,.hero .azioni{animation:sali .6s var(--ease-expo) backwards}
+.hero .claim{animation-delay:.07s}
+.hero .dal{animation-delay:.12s}
+.hero .azioni{animation-delay:.17s}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<p class="avviso">Anteprima del sito. Le fotografie sono provvisorie e vanno sostituite con quelle vere del salone.</p>
+
+<header class="wrap top">
+  <a class="marchio" href="#top">Angels<span>.</span></a>
+  <nav>
+    <a href="#ricostruzione">Ricostruzione</a>
+    <a href="#servizi">Servizi</a>
+    <a href="#lavori">Lavori</a>
+    <a href="#contatti">Orari e contatti</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="wrap hero">
+    <div>
+      <h1>Tagliamo, coloriamo e <em>rimettiamo in sesto</em> i capelli. A Rovereto.</h1>
+      <p class="claim">Salone per donna e uomo. Colore, mèches, extension e i trattamenti che il capello se lo tengono, non lo coprono.</p>
+      <p class="dal"><i></i><span><b>Dal 2003</b>, stesse mani.</span></p>
+      <div class="azioni">
+        <a class="btn btn-p" href="https://wa.me/393297566375">Scrivi su WhatsApp</a>
+        <a class="btn btn-s" href="tel:+393297566375">Chiama ora</a>
+      </div>
+    </div>
+    <figure>
+      <img src="assets/foto/hero.webp" width="1200" height="1500" fetchpriority="high"
+           alt="Forbici e pettine al lavoro su una ciocca di capelli, in salone">
+    </figure>
+  </section>
+
+  <section class="sezione forte" id="ricostruzione">
+    <div class="wrap">
+      <div class="riga">
+        <div>
+          <h2>Il capello rovinato si ripara, non si nasconde</h2>
+          <p class="intro">Decolorazioni, piastra tutti i giorni, sole d'estate. Il capello si rovina piano e poi si nota tutto insieme. È la parte del lavoro in cui siamo più forti, e quella di cui in giro si parla meno.</p>
+          <div class="passi">
+            <div class="passo">
+              <strong>Prima si guarda</strong>
+              <p>Lunghezze, punte, cuoio capelluto. Diciamo cosa si può fare e cosa no, prima di iniziare. Se non sappiamo risolverlo, lo diciamo.</p>
+            </div>
+            <div class="passo">
+              <strong>Poi si ricostruisce</strong>
+              <p>Maschere ricostruttive e trattamento con botox capillare, scelti sul capello che abbiamo davanti, non a pacchetto.</p>
+            </div>
+            <div class="passo">
+              <strong>Le doppie punte, senza perdere lunghezza</strong>
+              <p>Il macchinario individua e taglia solo la punta rovinata. Chi sta facendo crescere i capelli non deve scegliere fra lunghezza e capello sano.</p>
+            </div>
+          </div>
+        </div>
+        <figure>
+          <img src="assets/foto/trattamento.webp" width="900" height="1200" loading="lazy"
+               alt="Mani che massaggiano un trattamento su capelli ramati">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap sezione" id="servizi">
+    <h2>Quello che facciamo</h2>
+    <p class="intro">Nessun pacchetto da decidere prima. Si guarda il capello, si dice cosa serve, e il prezzo si sa prima di iniziare.</p>
+    <div class="lista">
+      <div class="voce"><b>Taglio e piega</b><span>Donna e uomo, con la piega fatta per tenere anche il giorno dopo.</span><em>su appuntamento</em></div>
+      <div class="voce"><b>Colore</b><span>Copertura, cambi di tono, ramati e biondi caldi.</span><em>su appuntamento</em></div>
+      <div class="voce"><b>Mèches e schiariture</b><span>Schiariture su misura, senza spegnere il capello.</span><em>su appuntamento</em></div>
+      <div class="voce"><b>Ricostruzione</b><span>Maschere e botox capillare per capelli sfibrati.</span><em>su appuntamento</em></div>
+      <div class="voce"><b>Doppie punte</b><span>Tolte col macchinario, senza accorciare la lunghezza.</span><em>su appuntamento</em></div>
+      <div class="voce"><b>Extension</b><span>Applicazione e mantenimento.</span><em>su appuntamento</em></div>
+    </div>
+    <p class="nota-prezzi">Per colore e ricostruzione il prezzo dipende da lunghezza e stato del capello: si decide insieme prima di cominciare, senza sorprese al momento di pagare.</p>
+  </section>
+
+  <section class="wrap sezione" id="lavori">
+    <h2>Qualche lavoro</h2>
+    <p class="intro">Colore e trattamenti fatti in salone.</p>
+    <div class="griglia">
+      <figure>
+        <img src="assets/foto/lavoro-ramato.webp" width="900" height="1200" loading="lazy"
+             alt="Capelli lunghi lisci di colore ramato visti da dietro">
+        <figcaption>Ramato pieno su lunghezze lisce</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/foto/lavoro-rosso.webp" width="900" height="1200" loading="lazy"
+             alt="Capelli mossi rosso intenso visti da dietro">
+        <figcaption>Rosso intenso con lunghezze mosse</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/foto/colore.webp" width="900" height="1200" loading="lazy"
+             alt="Capelli biondi lunghi pettinati dopo la schiaritura, visti da dietro">
+        <figcaption>Biondo caldo, schiaritura su lunghezze mosse</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sezione forte">
+    <div class="wrap">
+      <div class="dietro">
+        <div>
+          <h2>Chi c'è dietro</h2>
+          <p>Angels Parrucchieri è aperto dal 2003. Il titolare è Antonio Forgione, e in salone ci trovate lui: non è una catena, non cambia mano ogni sei mesi.</p>
+          <p>Si lavora su appuntamento, da martedì a sabato. Se scrivete fuori orario rispondiamo appena rientriamo.</p>
+          <div class="azioni">
+            <a class="btn btn-p" href="https://wa.me/393297566375">Scrivi su WhatsApp</a>
+          </div>
+        </div>
+        <figure>
+          <img src="assets/foto/interno.webp" width="1000" height="1250" loading="lazy"
+               alt="Postazione di taglio con poltrona e specchio">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap sezione" id="contatti">
+    <div class="contatti">
+      <div>
+        <h2>Quando siamo aperti</h2>
+        <table class="orari">
+          <tr><th scope="row">Martedì</th><td>9:00 – 18:00</td></tr>
+          <tr><th scope="row">Mercoledì</th><td>9:00 – 18:00</td></tr>
+          <tr><th scope="row">Giovedì</th><td>9:00 – 18:00</td></tr>
+          <tr><th scope="row">Venerdì</th><td>9:00 – 18:00</td></tr>
+          <tr><th scope="row">Sabato</th><td>9:00 – 18:00</td></tr>
+          <tr><th scope="row">Domenica e lunedì</th><td>chiuso</td></tr>
+        </table>
+      </div>
+      <div>
+        <h2>Dove siamo</h2>
+        <p class="nap">
+          Via Enrico Fermi, 38068 Rovereto (TN)<br>
+          Telefono e WhatsApp <a href="tel:+393297566375">329 756 6375</a><br>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Angels+Parrucchieri+Via+Enrico+Fermi+Rovereto" target="_blank" rel="noopener">Aprite la mappa</a>
+        </p>
+        <div class="azioni">
+          <a class="btn btn-p" href="https://wa.me/393297566375">Scrivi su WhatsApp</a>
+          <a class="btn btn-s" href="tel:+393297566375">Chiama ora</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <span>Angels Parrucchieri — Via Enrico Fermi, Rovereto (TN)</span>
+  <span>Telefono e WhatsApp 329 756 6375</span>
+</footer>
+
+<div class="barra">
+  <a class="btn btn-p" href="https://wa.me/393297566375">Scrivi su WhatsApp</a>
+  <a class="btn btn-s" href="tel:+393297566375">Chiama ora</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Angels Parrucchieri",
+  "description": "Salone di parrucchieri per donna e uomo a Rovereto, aperto dal 2003. Taglio, colore, mèches, extension, ricostruzione del capello e trattamento delle doppie punte.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Enrico Fermi",
+    "postalCode": "38068",
+    "addressLocality": "Rovereto",
+    "addressRegion": "TN",
+    "addressCountry": "IT"
+  },
+  "telephone": "+39 329 756 6375",
+  "areaServed": "Rovereto e Vallagarina",
+  "foundingDate": "2003",
+  "priceRange": "€€",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  ],
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Taglio e piega" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Colore" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mèches e schiariture" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ricostruzione del capello" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trattamento doppie punte" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Extension" } }
+  ]
+}
+</script>
+
+</body>
+</html>
