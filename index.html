@@ -133,7 +133,9 @@ h1,h2,h3{
 /* chi c'e' dietro */
 .dietro{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
 .dietro p{margin-top:16px;color:var(--panna-soft);max-width:46ch}
-.dietro figure{margin:0;border-radius:4px;overflow:hidden}
+.dietro figure{margin:0}
+.dietro figure img{border-radius:4px}
+.dietro figcaption{margin-top:12px;font-size:15px;color:var(--panna-soft)}
 @media(max-width:880px){.dietro{grid-template-columns:1fr;gap:32px}}
 
 /* contatti */
@@ -171,7 +173,7 @@ footer{border-top:1px solid var(--linea);padding-top:26px;padding-bottom:26px;fo
 </head>
 <body>
 
-<p class="avviso">Anteprima del sito. Le fotografie sono provvisorie e vanno sostituite con quelle vere del salone.</p>
+<p class="avviso">Anteprima del sito. I lavori e la foto in salone sono vostri, presi dalla vostra pagina Facebook: sono a bassa risoluzione e vanno rifatti. Le altre due foto sono provvisorie.</p>
 
 <header class="wrap top">
   <a class="marchio" href="#top">Angels<span>.</span></a>
@@ -246,22 +248,22 @@ footer{border-top:1px solid var(--linea);padding-top:26px;padding-bottom:26px;fo
 
   <section class="wrap sezione" id="lavori">
     <h2>Qualche lavoro</h2>
-    <p class="intro">Colore e trattamenti fatti in salone.</p>
+    <p class="intro">Colore e schiariture fatti qui in salone.</p>
     <div class="griglia">
       <figure>
-        <img src="assets/foto/lavoro-ramato.webp" width="900" height="1200" loading="lazy"
-             alt="Capelli lunghi lisci di colore ramato visti da dietro">
-        <figcaption>Ramato pieno su lunghezze lisce</figcaption>
+        <img src="assets/foto/lavoro-ramato.webp" width="640" height="800" loading="lazy"
+             alt="Capelli lunghi ramati con riflessi rame, visti da dietro in salone">
+        <figcaption>Ramato con riflessi rame su lunghezze mosse</figcaption>
       </figure>
       <figure>
-        <img src="assets/foto/lavoro-rosso.webp" width="900" height="1200" loading="lazy"
-             alt="Capelli mossi rosso intenso visti da dietro">
-        <figcaption>Rosso intenso con lunghezze mosse</figcaption>
+        <img src="assets/foto/lavoro-mosso.webp" width="640" height="800" loading="lazy"
+             alt="Taglio medio con schiariture dorate, visto da dietro in salone">
+        <figcaption>Taglio medio e schiariture dorate</figcaption>
       </figure>
       <figure>
-        <img src="assets/foto/colore.webp" width="900" height="1200" loading="lazy"
-             alt="Capelli biondi lunghi pettinati dopo la schiaritura, visti da dietro">
-        <figcaption>Biondo caldo, schiaritura su lunghezze mosse</figcaption>
+        <img src="assets/foto/lavoro-meches.webp" width="640" height="800" loading="lazy"
+             alt="Mèches su un taglio scalato, viste di lato in salone">
+        <figcaption>Mèches su taglio scalato</figcaption>
       </figure>
     </div>
   </section>
@@ -278,8 +280,9 @@ footer{border-top:1px solid var(--linea);padding-top:26px;padding-bottom:26px;fo
           </div>
         </div>
         <figure>
-          <img src="assets/foto/interno.webp" width="1000" height="1250" loading="lazy"
-               alt="Postazione di taglio con poltrona e specchio">
+          <img src="assets/foto/antonio.webp" width="640" height="800" loading="lazy"
+               alt="Antonio Forgione al lavoro su una cliente, nel salone di Rovereto">
+          <figcaption>Antonio al lavoro, in salone</figcaption>
         </figure>
       </div>
     </div>
