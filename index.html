@@ -5,7 +5,7 @@
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Parrucchiere a Rovereto — Angels Parrucchieri</title>
-<meta name="description" content="Parrucchiere a Rovereto dal 2003, donna e uomo. Taglio, colore, mèches, extension e ricostruzione del capello. Si prenota con un messaggio su WhatsApp.">
+<meta name="description" content="Parrucchiere a Lizzana di Rovereto dal 2003, donna e uomo. Taglio da 15 €, colore da 30 €, mèches, shatush e ricostruzione. 10% di sconto la prima volta, parcheggio riservato.">
 <meta name="theme-color" content="#17191B">
 <link rel="canonical" href="https://stefanopontalti07-cloud.github.io/angels-parrucchieri/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -15,7 +15,7 @@
 <meta property="og:locale" content="it_IT">
 <meta property="og:site_name" content="Angels Parrucchieri">
 <meta property="og:title" content="Parrucchiere a Rovereto — Angels Parrucchieri">
-<meta property="og:description" content="Taglio, colore e ricostruzione del capello a Rovereto, dal 2003. Si prenota con un messaggio su WhatsApp.">
+<meta property="og:description" content="Taglio, colore e ricostruzione del capello a Lizzana di Rovereto, dal 2003. 10% di sconto la prima volta. Si prenota con un messaggio su WhatsApp.">
 <meta property="og:image" content="https://stefanopontalti07-cloud.github.io/angels-parrucchieri/assets/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -97,6 +97,24 @@ h1,h2,h3{
 .hero figure{margin:0;border-radius:4px;overflow:hidden}
 @media(max-width:880px){.hero{grid-template-columns:1fr;gap:34px;padding-top:48px;padding-bottom:56px}}
 
+/* prima volta, sconto 10% */
+.prima-volta{
+  display:flex;align-items:center;gap:26px;
+  padding-top:26px;padding-bottom:26px;
+  border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);
+}
+.prima-volta .sconto{
+  font-family:"Archivo",sans-serif;font-variation-settings:"wdth" 125;font-weight:800;
+  font-size:clamp(2.4rem,6vw,3.4rem);line-height:1;letter-spacing:-.04em;color:var(--rame);flex:none;
+}
+.prima-volta p:last-child{max-width:56ch;color:var(--panna-soft);font-size:16.5px}
+.prima-volta b{color:var(--panna);font-weight:500}
+@media(max-width:600px){.prima-volta{flex-direction:column;align-items:flex-start;gap:10px}}
+
+/* parcheggio */
+.parcheggio{margin-top:18px;font-size:16px;color:var(--panna-soft);max-width:44ch}
+.parcheggio b{color:var(--panna);font-weight:500}
+
 /* sezioni */
 .sezione{padding-top:78px;padding-bottom:78px;border-top:1px solid var(--linea)}
 .sezione h2{font-size:clamp(2rem,4.4vw,3rem);max-width:20ch}
@@ -118,8 +136,12 @@ h1,h2,h3{
 .voce:first-child{border-top:1px solid var(--linea)}
 .voce b{font-family:"Archivo",sans-serif;font-variation-settings:"wdth" 112;font-weight:600;font-size:21px;letter-spacing:-.02em}
 .voce span{color:var(--panna-soft);font-size:15.5px}
-.voce em{font-style:normal;color:var(--rame);font-size:14px;white-space:nowrap}
-@media(max-width:760px){.voce{grid-template-columns:1fr;gap:6px}.voce em{margin-top:4px}}
+.voce em{
+  font-style:normal;color:var(--rame);white-space:nowrap;
+  font-family:"Archivo",sans-serif;font-variation-settings:"wdth" 112;
+  font-weight:600;font-size:20px;letter-spacing:-.02em;
+}
+@media(max-width:760px){.voce{grid-template-columns:1fr;gap:6px}.voce em{margin-top:4px;font-size:19px}}
 .nota-prezzi{margin-top:26px;font-size:15.5px;color:var(--panna-lieve);max-width:60ch}
 
 /* lavori */
@@ -179,7 +201,7 @@ footer{border-top:1px solid var(--linea);padding-top:26px;padding-bottom:26px;fo
   <a class="marchio" href="#top">Angels<span>.</span></a>
   <nav>
     <a href="#ricostruzione">Ricostruzione</a>
-    <a href="#servizi">Servizi</a>
+    <a href="#listino">Listino</a>
     <a href="#lavori">Lavori</a>
     <a href="#contatti">Orari e contatti</a>
   </nav>
@@ -202,6 +224,14 @@ footer{border-top:1px solid var(--linea);padding-top:26px;padding-bottom:26px;fo
            alt="Forbici e pettine al lavoro su una ciocca di capelli, in salone">
     </figure>
   </section>
+
+  <aside class="wrap prima-volta">
+    <p class="sconto">10%</p>
+    <p>
+      <b>Se è la prima volta che venite da noi, il 10% ve lo togliamo.</b>
+      Su ogni servizio, anche sul listino intero. Basta dirlo quando prenotate.
+    </p>
+  </aside>
 
   <section class="sezione forte" id="ricostruzione">
     <div class="wrap">
@@ -232,18 +262,23 @@ footer{border-top:1px solid var(--linea);padding-top:26px;padding-bottom:26px;fo
     </div>
   </section>
 
-  <section class="wrap sezione" id="servizi">
-    <h2>Quello che facciamo</h2>
-    <p class="intro">Nessun pacchetto da decidere prima. Si guarda il capello, si dice cosa serve, e il prezzo si sa prima di iniziare.</p>
+  <section class="wrap sezione" id="listino">
+    <h2>Listino</h2>
+    <p class="intro">I prezzi sono questi, scritti chiari. Nessun pacchetto da decidere prima: si guarda il capello, si dice cosa serve, e quanto viene si sa prima di iniziare.</p>
     <div class="lista">
-      <div class="voce"><b>Taglio e piega</b><span>Donna e uomo, con la piega fatta per tenere anche il giorno dopo.</span><em>su appuntamento</em></div>
-      <div class="voce"><b>Colore</b><span>Copertura, cambi di tono, ramati e biondi caldi.</span><em>su appuntamento</em></div>
-      <div class="voce"><b>Mèches e schiariture</b><span>Schiariture su misura, senza spegnere il capello.</span><em>su appuntamento</em></div>
-      <div class="voce"><b>Ricostruzione</b><span>Maschere e botox capillare per capelli sfibrati.</span><em>su appuntamento</em></div>
-      <div class="voce"><b>Doppie punte</b><span>Tolte col macchinario, senza accorciare la lunghezza.</span><em>su appuntamento</em></div>
-      <div class="voce"><b>Extension</b><span>Applicazione e mantenimento.</span><em>su appuntamento</em></div>
+      <div class="voce"><b>Shampoo e piega</b><span>La piega fatta per tenere anche il giorno dopo.</span><em>18 €</em></div>
+      <div class="voce"><b>Shampoo, taglio e piega</b><span>Il servizio completo per lei.</span><em>35 €</em></div>
+      <div class="voce"><b>Shampoo e taglio uomo</b><span>Taglio classico o sfumato.</span><em>15 €</em></div>
+      <div class="voce"><b>Colore</b><span>Copertura e cambi di tono.</span><em>30 €</em></div>
+      <div class="voce"><b>Colpi di luce</b><span>Schiariture leggere, per illuminare senza stravolgere.</span><em>40 €</em></div>
+      <div class="voce"><b>Mèches</b><span>Schiariture su misura, ciocca per ciocca.</span><em>45 €</em></div>
+      <div class="voce"><b>Shatush</b><span>Sfumatura naturale dalle lunghezze alle punte.</span><em>60 €</em></div>
+      <div class="voce"><b>Permanente</b><span>Onda morbida o riccio definito.</span><em>45 €</em></div>
+      <div class="voce"><b>Extension</b><span>Applicazione e mantenimento, prezzo a ciocca.</span><em>2,50 € a ciocca</em></div>
+      <div class="voce"><b>Ricostruzione e doppie punte</b><span>Maschere, botox capillare, doppie punte tolte col macchinario.</span><em>su preventivo</em></div>
     </div>
-    <p class="nota-prezzi">Per colore e ricostruzione il prezzo dipende da lunghezza e stato del capello: si decide insieme prima di cominciare, senza sorprese al momento di pagare.</p>
+    <p class="nota-prezzi">Per la ricostruzione il prezzo dipende da lunghezza e stato del capello: si guarda insieme e si dice quanto viene prima di cominciare, senza sorprese al momento di pagare.</p>
+    <p class="nota-prezzi">Si paga anche con bancomat, carta, Apple Pay e Google Pay.</p>
   </section>
 
   <section class="wrap sezione" id="lavori">
@@ -293,21 +328,22 @@ footer{border-top:1px solid var(--linea);padding-top:26px;padding-bottom:26px;fo
       <div>
         <h2>Quando siamo aperti</h2>
         <table class="orari">
-          <tr><th scope="row">Martedì</th><td>9:00 – 18:00</td></tr>
-          <tr><th scope="row">Mercoledì</th><td>9:00 – 18:00</td></tr>
-          <tr><th scope="row">Giovedì</th><td>9:00 – 18:00</td></tr>
-          <tr><th scope="row">Venerdì</th><td>9:00 – 18:00</td></tr>
-          <tr><th scope="row">Sabato</th><td>9:00 – 18:00</td></tr>
+          <tr><th scope="row">Martedì</th><td>8:30 – 18:30</td></tr>
+          <tr><th scope="row">Mercoledì</th><td>8:30 – 18:30</td></tr>
+          <tr><th scope="row">Giovedì</th><td>8:30 – 18:30</td></tr>
+          <tr><th scope="row">Venerdì</th><td>8:30 – 18:30</td></tr>
+          <tr><th scope="row">Sabato</th><td>dalle 8:00</td></tr>
           <tr><th scope="row">Domenica e lunedì</th><td>chiuso</td></tr>
         </table>
       </div>
       <div>
         <h2>Dove siamo</h2>
         <p class="nap">
-          Via Enrico Fermi, 38068 Rovereto (TN)<br>
+          Via Fermi 18, Lizzana di Rovereto (TN)<br>
           Telefono e WhatsApp <a href="tel:+393297566375">329 756 6375</a><br>
-          <a href="https://www.google.com/maps/search/?api=1&amp;query=Angels+Parrucchieri+Via+Enrico+Fermi+Rovereto" target="_blank" rel="noopener">Aprite la mappa</a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Angels+Parrucchieri+Via+Fermi+18+Lizzana+Rovereto" target="_blank" rel="noopener">Aprite la mappa</a>
         </p>
+        <p class="parcheggio"><b>C'è il parcheggio riservato ai clienti</b>, davanti al salone: non dovete girare per trovare posto.</p>
         <div class="azioni">
           <a class="btn btn-p" href="https://wa.me/393297566375">Scrivi su WhatsApp</a>
           <a class="btn btn-s" href="tel:+393297566375">Chiama ora</a>
@@ -319,7 +355,7 @@ footer{border-top:1px solid var(--linea);padding-top:26px;padding-bottom:26px;fo
 </main>
 
 <footer class="wrap">
-  <span>Angels Parrucchieri — Via Enrico Fermi, Rovereto (TN)</span>
+  <span>Angels Parrucchieri di Forgione Antonio — Via Fermi 18, Lizzana di Rovereto (TN) — P.IVA 02301490229</span>
   <span>Telefono e WhatsApp 329 756 6375</span>
 </footer>
 
@@ -336,7 +372,7 @@ footer{border-top:1px solid var(--linea);padding-top:26px;padding-bottom:26px;fo
   "description": "Salone di parrucchieri per donna e uomo a Rovereto, aperto dal 2003. Taglio, colore, mèches, extension, ricostruzione del capello e trattamento delle doppie punte.",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Via Enrico Fermi",
+    "streetAddress": "Via Fermi 18, Lizzana",
     "postalCode": "38068",
     "addressLocality": "Rovereto",
     "addressRegion": "TN",
@@ -349,18 +385,24 @@ footer{border-top:1px solid var(--linea);padding-top:26px;padding-bottom:26px;fo
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"],
-      "opens": "09:00",
-      "closes": "18:00"
+      "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:30",
+      "closes": "18:30"
     }
   ],
+  "paymentAccepted": "Contanti, Bancomat, Carte di credito, Apple Pay, Google Pay",
+  "vatID": "IT02301490229",
   "makesOffer": [
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Taglio e piega" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Colore" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mèches e schiariture" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ricostruzione del capello" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trattamento doppie punte" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Extension" } }
+    { "@type": "Offer", "priceCurrency": "EUR", "price": "18.00", "itemOffered": { "@type": "Service", "name": "Shampoo e piega" } },
+    { "@type": "Offer", "priceCurrency": "EUR", "price": "35.00", "itemOffered": { "@type": "Service", "name": "Shampoo, taglio e piega" } },
+    { "@type": "Offer", "priceCurrency": "EUR", "price": "15.00", "itemOffered": { "@type": "Service", "name": "Shampoo e taglio uomo" } },
+    { "@type": "Offer", "priceCurrency": "EUR", "price": "30.00", "itemOffered": { "@type": "Service", "name": "Colore" } },
+    { "@type": "Offer", "priceCurrency": "EUR", "price": "40.00", "itemOffered": { "@type": "Service", "name": "Colpi di luce" } },
+    { "@type": "Offer", "priceCurrency": "EUR", "price": "45.00", "itemOffered": { "@type": "Service", "name": "Mèches" } },
+    { "@type": "Offer", "priceCurrency": "EUR", "price": "60.00", "itemOffered": { "@type": "Service", "name": "Shatush" } },
+    { "@type": "Offer", "priceCurrency": "EUR", "price": "45.00", "itemOffered": { "@type": "Service", "name": "Permanente" } },
+    { "@type": "Offer", "priceCurrency": "EUR", "price": "2.50", "itemOffered": { "@type": "Service", "name": "Extension, a ciocca" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ricostruzione del capello e trattamento doppie punte" } }
   ]
 }
 </script>
