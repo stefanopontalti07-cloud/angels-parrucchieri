@@ -59,8 +59,6 @@ h1,h2,h3{
   font-weight:700;letter-spacing:-.035em;line-height:.95;text-wrap:balance;
 }
 
-/* avviso prototipo, si toglie prima della pubblicazione */
-.avviso{background:var(--rame);color:#12100E;font-size:13.5px;line-height:1.45;padding:10px 20px;text-align:center;font-weight:500}
 
 /* intestazione */
 .top{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:20px;padding-bottom:20px;border-bottom:1px solid var(--linea)}
@@ -90,9 +88,6 @@ h1,h2,h3{
 .hero h1{font-size:clamp(3rem,7.6vw,5.4rem)}
 .hero h1 em{font-style:normal;color:var(--rame)}
 .claim{margin-top:24px;max-width:36ch;font-size:19px;color:var(--panna-soft)}
-.dal{margin-top:28px;display:flex;align-items:center;gap:14px;font-size:14.5px;color:var(--panna-soft)}
-.dal i{display:block;width:44px;height:1px;background:var(--rame);flex:none}
-.dal b{color:var(--panna);font-weight:500}
 .hero .azioni{margin-top:32px}
 .hero figure{margin:0;border-radius:4px;overflow:hidden}
 @media(max-width:880px){.hero{grid-template-columns:1fr;gap:34px;padding-top:48px;padding-bottom:56px}}
@@ -183,10 +178,9 @@ footer{border-top:1px solid var(--linea);padding-top:26px;padding-bottom:26px;fo
 
 /* un solo momento firma, all'apertura */
 @keyframes sali{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
-.hero h1,.hero .claim,.hero .dal,.hero .azioni{animation:sali .6s var(--ease-expo) backwards}
+.hero h1,.hero .claim,.hero .azioni{animation:sali .6s var(--ease-expo) backwards}
 .hero .claim{animation-delay:.07s}
-.hero .dal{animation-delay:.12s}
-.hero .azioni{animation-delay:.17s}
+.hero .azioni{animation-delay:.12s}
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *{animation:none!important;transition:none!important}
@@ -195,7 +189,6 @@ footer{border-top:1px solid var(--linea);padding-top:26px;padding-bottom:26px;fo
 </head>
 <body>
 
-<p class="avviso">Anteprima del sito. Il ritratto di Antonio viene dal suo TikTok, le foto dei lavori dalla vostra pagina Facebook: quelle sono vecchie e a bassa risoluzione, vanno rifatte. Altre due foto sono provvisorie.</p>
 
 <header class="wrap top">
   <a class="marchio" href="#top">Angels<span>.</span></a>
@@ -211,17 +204,16 @@ footer{border-top:1px solid var(--linea);padding-top:26px;padding-bottom:26px;fo
 
   <section class="wrap hero">
     <div>
-      <h1>Tagliamo, coloriamo e <em>rimettiamo in sesto</em> i capelli. A Rovereto.</h1>
-      <p class="claim">Salone per donna e uomo. Colore, mèches, extension e i trattamenti che il capello se lo tengono, non lo coprono.</p>
-      <p class="dal"><i></i><span><b>Dal 2003</b>, stesse mani.</span></p>
+      <h1>Salone per <em>donna e uomo</em></h1>
+      <p class="claim">Colore, mèches, extension e trattamenti.</p>
       <div class="azioni">
         <a class="btn btn-p" href="https://wa.me/393297566375">Scrivi su WhatsApp</a>
         <a class="btn btn-s" href="tel:+393297566375">Chiama ora</a>
       </div>
     </div>
     <figure>
-      <img src="assets/foto/hero.webp" width="1200" height="1500" fetchpriority="high"
-           alt="Forbici e pettine al lavoro su una ciocca di capelli, in salone">
+      <img src="assets/foto/hero.webp" width="960" height="1200" fetchpriority="high"
+           alt="L'interno di Angels Parrucchieri: l'insegna del salone sopra le postazioni di lavaggio">
     </figure>
   </section>
 
@@ -256,7 +248,7 @@ footer{border-top:1px solid var(--linea);padding-top:26px;padding-bottom:26px;fo
         </div>
         <figure>
           <img src="assets/foto/trattamento.webp" width="900" height="1200" loading="lazy"
-               alt="Mani che massaggiano un trattamento su capelli ramati">
+               alt="La reception di Angels Parrucchieri, all'ingresso del salone">
         </figure>
       </div>
     </div>
