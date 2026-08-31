@@ -332,7 +332,7 @@ footer{border-top:1px solid var(--linea);padding-top:26px;padding-bottom:26px;fo
           <tr><th scope="row">Mercoledì</th><td>8:30 – 18:30</td></tr>
           <tr><th scope="row">Giovedì</th><td>8:30 – 18:30</td></tr>
           <tr><th scope="row">Venerdì</th><td>8:30 – 18:30</td></tr>
-          <tr><th scope="row">Sabato</th><td>dalle 8:00</td></tr>
+          <tr><th scope="row">Sabato</th><td>8:00 – 18:00</td></tr>
           <tr><th scope="row">Domenica e lunedì</th><td>chiuso</td></tr>
         </table>
       </div>
@@ -388,6 +388,12 @@ footer{border-top:1px solid var(--linea);padding-top:26px;padding-bottom:26px;fo
       "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"],
       "opens": "08:30",
       "closes": "18:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday"],
+      "opens": "08:00",
+      "closes": "18:00"
     }
   ],
   "paymentAccepted": "Contanti, Bancomat, Carte di credito, Apple Pay, Google Pay",
