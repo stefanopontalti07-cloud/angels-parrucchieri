@@ -139,13 +139,18 @@ h1,h2,h3{
 @media(max-width:760px){.voce{grid-template-columns:1fr;gap:6px}.voce em{margin-top:4px;font-size:19px}}
 .nota-prezzi{margin-top:26px;font-size:15.5px;color:var(--panna-lieve);max-width:60ch}
 
-/* lavori */
+/* griglia foto */
 .griglia{margin-top:44px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.griglia.due{grid-template-columns:repeat(2,1fr);gap:26px}
 .griglia figure{margin:0;border-radius:4px;overflow:hidden}
 .griglia figcaption{margin-top:12px;font-size:15px;color:var(--panna-soft)}
 .griglia img{transition:transform .5s var(--ease-quart)}
 .griglia figure:hover img{transform:scale(1.02)}
-@media(max-width:760px){.griglia{grid-template-columns:1fr;gap:26px}}
+@media(max-width:760px){.griglia,.griglia.due{grid-template-columns:1fr;gap:26px}}
+
+/* le tre tecniche del colore, in riga */
+.passi.tre{margin-top:44px;grid-template-columns:repeat(3,1fr);gap:28px}
+@media(max-width:760px){.passi.tre{grid-template-columns:1fr;gap:24px}}
 
 /* chi c'e' dietro */
 .dietro{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
@@ -196,6 +201,7 @@ footer{border-top:1px solid var(--linea);padding-top:26px;padding-bottom:26px;fo
     <a href="#servizi">Servizi</a>
     <a href="#listino">Listino</a>
     <a href="#colore">Colore</a>
+    <a href="#salone">Il salone</a>
     <a href="#contatti">Orari e contatti</a>
   </nav>
 </header>
@@ -273,22 +279,36 @@ footer{border-top:1px solid var(--linea);padding-top:26px;padding-bottom:26px;fo
 
   <section class="wrap sezione" id="colore">
     <h2>Il colore, spiegato</h2>
-    <p class="intro">Tre strade diverse per cambiare colore. Le foto qui sotto servono a far vedere di cosa si parla, come farebbe un disegno: il risultato vero si decide in salone, guardando la base di partenza del tuo capello.</p>
-    <div class="griglia">
+    <p class="intro">Tre strade diverse per cambiare colore. Quale conviene si decide in salone, guardando la base di partenza del tuo capello: qui sotto c'è cosa vuol dire ognuna, così se ne parla sapendo già di cosa si tratta.</p>
+    <div class="passi tre">
+      <div class="passo">
+        <strong>Colore pieno</strong>
+        <p>Un tono solo su tutta la testa, radice compresa. È la strada per cambiare davvero colore, o per coprire il bianco.</p>
+      </div>
+      <div class="passo">
+        <strong>Colpi di luce caldi</strong>
+        <p>Schiariture su ciocche scelte, sul dorato o sul caramello. Danno movimento, e la ricrescita non fa scalino.</p>
+      </div>
+      <div class="passo">
+        <strong>Shatush e mèches fredde</strong>
+        <p>Si schiarisce verso le lunghezze e si tiene la radice scura, sfumata. Cresce bene senza ritocchi ravvicinati.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap sezione" id="salone">
+    <h2>Dentro il salone</h2>
+    <p class="intro">Le foto sono fatte in salone, in Via Fermi a Lizzana. Quello che vedete qui è quello che trovate entrando.</p>
+    <div class="griglia due">
       <figure>
-        <img src="assets/foto/tecnica-ramato.webp" width="640" height="800" loading="lazy"
-             alt="Capelli lunghi ramati, visti da dietro">
-        <figcaption><strong>Colore pieno.</strong> Un tono solo su tutta la testa, radice compresa. È la strada per cambiare davvero colore, o per coprire il bianco.</figcaption>
+        <img src="assets/foto/salone-postazioni.webp" width="900" height="1125" loading="lazy"
+             alt="Postazioni di taglio di Angels Parrucchieri: due poltrone davanti agli specchi illuminati">
+        <figcaption>Le postazioni di taglio, con gli specchi illuminati.</figcaption>
       </figure>
       <figure>
-        <img src="assets/foto/tecnica-caramello.webp" width="640" height="800" loading="lazy"
-             alt="Capelli mossi schiariti sul biondo caramello, visti da dietro">
-        <figcaption><strong>Colpi di luce caldi.</strong> Schiariture su ciocche scelte, sul dorato o sul caramello. Danno movimento, e la ricrescita non fa scalino.</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/foto/tecnica-shatush.webp" width="640" height="800" loading="lazy"
-             alt="Capelli lunghi lisci con shatush freddo e radice scura sfumata, visti da dietro">
-        <figcaption><strong>Shatush e mèches fredde.</strong> Si schiarisce verso le lunghezze e si tiene la radice scura, sfumata. Cresce bene senza ritocchi ravvicinati.</figcaption>
+        <img src="assets/foto/salone-lavaggio.webp" width="900" height="1125" loading="lazy"
+             alt="Le poltrone del lavaggio di Angels Parrucchieri, sotto l'insegna del salone">
+        <figcaption>Il lavaggio, sotto l'insegna.</figcaption>
       </figure>
     </div>
   </section>
